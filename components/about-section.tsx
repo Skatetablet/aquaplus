@@ -2,16 +2,16 @@ import { CircleCheck as CheckCircle2, Award, Users, TrendingUp } from 'lucide-re
 
 const specialties = [
   'Productos químicos grado industrial',
-  'Grado analítico certificado',
+  'Grado analítico',
   'Equipo y material para laboratorio',
-  'Accesorios para alberca y piscina',
+  'Accesorios para piscina',
   'Equipo para tratamiento de agua',
-  'Material refractario y químicos',
+  'Material refractario y productos químicos',
 ];
 
-const milestones = [
-  { icon: Award, label: 'Años en el mercado', value: '20+' },
-  { icon: Users, label: 'Clientes activos', value: '1,000+' },
+const pillars = [
+  { icon: Award, label: 'Años de trayectoria', value: '20+' },
+  { icon: Users, label: 'Clientes satisfechos', value: '1,000+' },
   { icon: TrendingUp, label: 'Productos en catálogo', value: '500+' },
 ];
 
@@ -37,13 +37,8 @@ export default function AboutSection() {
               </div>
               <div className="mt-3 h-0.5 bg-[#0EA5E9] w-8" />
               <p className="text-xs text-white/60 mt-2 leading-relaxed">
-                Más de dos décadas de excelencia química
+                20 años de calidad, profesionalismo y compromiso
               </p>
-            </div>
-
-            <div className="absolute -top-4 -left-4 bg-[#0EA5E9] rounded-xl p-4 shadow-xl">
-              <div className="text-2xl font-black text-white">ISO</div>
-              <div className="text-xs text-white/80 tracking-wider">Certificado</div>
             </div>
           </div>
 
@@ -51,22 +46,49 @@ export default function AboutSection() {
             <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-[#0EA5E9] mb-4">
               Quiénes Somos
             </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-[#0A1F3C] leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl font-black text-[#0A1F3C] leading-tight mb-2">
               Química Aquaplus
-              <br />
-              <span className="text-[#0EA5E9]">Tu aliado de confianza</span>
             </h2>
+            <p className="text-[#0EA5E9] font-bold text-lg mb-6">
+              20 años de Calidad, Profesionalismo, Responsabilidad y Compromiso
+            </p>
 
             <p className="text-[#5A7282] leading-relaxed mb-4">
-              Desde 2003, nos hemos conducido con profesionalismo, responsabilidad y el compromiso
-              de la mejora continua día a día. Somos un equipo de trabajo que enmarca nuestros
-              valores y objetivos.
+              Empresa mexicana distribuidora de productos químicos industriales y reactivos analíticos,
+              establecida en Guaymas, Sonora desde el año 2003. Nos hemos especializado en el diseño
+              y construcción de albercas de todo tipo, en el servicio y mantenimiento; para ofrecerles
+              a las familias locales y foráneas una alternativa en salud y diversión.
             </p>
             <p className="text-[#5A7282] leading-relaxed mb-8">
-              Comprometidos siempre con nuestros clientes en brindarles excelente calidad con
-              nuestras marcas líderes y confiables, manteniendo una constante capacitación para
-              ofrecer alta calidad en nuestros productos y servicios.
+              A lo largo de nuestra trayectoria hemos crecido como empresa, ganando la confianza de
+              más empresas y familias por saber aplicar nuestros valores en beneficio de la sociedad.
             </p>
+
+            {/* Misión / Visión / Objetivos */}
+            <div className="space-y-4 mb-8">
+              {[
+                {
+                  title: 'Misión',
+                  text: 'Somos un equipo comprometido con nuestros clientes en brindarles excelente calidad con marcas líderes y confiables, manteniendo una constante capacitación para ofrecer alta calidad en productos y servicios.',
+                },
+                {
+                  title: 'Visión',
+                  text: 'Proyectar nuestra imagen como empresa líder por la venta de nuestros productos y servicios, posicionándonos en el mercado de la industria manejando marcas líderes a la vanguardia.',
+                },
+                {
+                  title: 'Objetivos',
+                  text: 'Mantener en nuestros clientes y amigos una sonrisa de satisfacción y la seguridad de que ellos y sus seres queridos nadan en un agua tratada con nuestros productos.',
+                },
+              ].map(({ title, text }) => (
+                <div key={title} className="flex gap-3">
+                  <div className="mt-1 w-2 h-2 rounded-full bg-[#0EA5E9] shrink-0" />
+                  <div>
+                    <span className="text-sm font-black text-[#0A1F3C]">{title}: </span>
+                    <span className="text-sm text-[#5A7282] leading-relaxed">{text}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
 
             <div className="grid grid-cols-2 gap-3 mb-10">
               {specialties.map((item) => (
@@ -78,7 +100,7 @@ export default function AboutSection() {
             </div>
 
             <div className="grid grid-cols-3 gap-4 pt-8 border-t border-[#E2EDF7]">
-              {milestones.map((m) => {
+              {pillars.map((m) => {
                 const Icon = m.icon;
                 return (
                   <div key={m.label} className="text-center">

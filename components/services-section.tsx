@@ -76,7 +76,7 @@ export default function ServicesSection() {
                   <Icon className="w-6 h-6 text-[#38BDF8]" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-lg font-black text-white mb-2">{service.title}</h3>
-                <p className="text-sm text-white/55 leading-relaxed">{service.description}</p>
+                <p className="text-sm text-white/90 leading-relaxed">{service.description}</p>
               </div>
             );
           })}

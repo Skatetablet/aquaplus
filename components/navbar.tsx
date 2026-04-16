@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { FlaskConical, Droplets, Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
   { label: 'Inicio', href: '#inicio' },
@@ -33,23 +33,12 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
-          <a href="#inicio" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0EA5E9] to-[#0284C7] flex items-center justify-center shadow-lg">
-                <FlaskConical className="w-5 h-5 text-white" strokeWidth={2} />
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-[#38BDF8] flex items-center justify-center">
-                <Droplets className="w-2.5 h-2.5 text-white" strokeWidth={2.5} />
-              </div>
-            </div>
-            <div className="leading-none">
-              <span className="block text-xl font-black tracking-tight text-white">
-                QUIMICA
-              </span>
-              <span className="block text-sm font-semibold tracking-[0.15em] text-[#38BDF8] uppercase">
-                Aquaplus
-              </span>
-            </div>
+          <a href="#inicio" className="flex items-center group">
+            <img
+              src="/logo.PNG"
+              alt="Química Aquaplus"
+              className="h-14 w-auto object-contain"
+            />
           </a>
 
           <nav className="hidden lg:flex items-center gap-1">

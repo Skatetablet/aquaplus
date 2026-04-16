@@ -43,8 +43,8 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-white/70 mb-10 max-w-xl leading-relaxed">
-            Proveemos productos químicos grado industrial, analítico y para albercas.
-            Más de 20 años siendo el aliado confiable de industrias, laboratorios y hogares.
+            Distribuidores de productos químicos industriales y reactivos analíticos en Guaymas,
+            Sonora desde 2003. Especialistas en diseño, construcción y mantenimiento de albercas.
           </p>
 
           <div className="flex flex-wrap gap-4">

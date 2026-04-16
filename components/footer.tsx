@@ -1,4 +1,4 @@
-import { FlaskConical, Droplets, MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 const links = {
   Productos: [
@@ -25,41 +25,49 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="relative">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0EA5E9] to-[#0284C7] flex items-center justify-center shadow-lg">
-                  <FlaskConical className="w-5 h-5 text-white" strokeWidth={2} />
-                </div>
-                <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-[#38BDF8] flex items-center justify-center">
-                  <Droplets className="w-2.5 h-2.5 text-white" strokeWidth={2.5} />
-                </div>
-              </div>
-              <div className="leading-none">
-                <span className="block text-xl font-black tracking-tight text-white">QUIMICA</span>
-                <span className="block text-sm font-semibold tracking-[0.15em] text-[#38BDF8] uppercase">
-                  Aquaplus
-                </span>
-              </div>
+            <div className="mb-5">
+              <img src="/logo.PNG" alt="Química Aquaplus" className="h-12 w-auto object-contain brightness-0 invert" />
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
               Desde 2003, proveyendo soluciones químicas de calidad para industria, laboratorios y
               albercas en toda la región.
             </p>
-            <div className="space-y-2.5">
-              <div className="flex items-center gap-3 text-sm text-white/50">
-                <MapPin className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                Guadalajara, Jalisco, México
+
+            {/* Guaymas */}
+            <div className="mb-5">
+              <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#38BDF8] mb-2">Guaymas</p>
+              <div className="space-y-2">
+                <div className="flex items-start gap-3 text-sm text-white/50">
+                  <MapPin className="w-4 h-4 text-[#38BDF8] shrink-0 mt-0.5" />
+                  <span>Calle 9 y 10 #3 entre Blvd. Benito Juárez y Av. 4<br />Col. San Vicente, Guaymas, Son. C.P. 85465</span>
+                </div>
+                <a href="tel:016222241457" className="flex items-center gap-3 text-sm text-white/50 hover:text-white/80 transition-colors">
+                  <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  01 (622) 224 14 57
+                </a>
+                <a href="mailto:ventas@quimicaaquaplus.com" className="flex items-center gap-3 text-sm text-white/50 hover:text-white/80 transition-colors">
+                  <Mail className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  ventas@quimicaaquaplus.com
+                </a>
               </div>
-              <div className="flex items-center gap-3 text-sm text-white/50">
-                <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                +52 (33) 000-0000
-              </div>
-              <div className="flex items-center gap-3 text-sm text-white/50">
-                <Mail className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                ventas@aquaplus.com.mx
+            </div>
+
+            {/* San Carlos */}
+            <div>
+              <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#38BDF8] mb-2">San Carlos</p>
+              <div className="space-y-2">
+                <div className="flex items-start gap-3 text-sm text-white/50">
+                  <MapPin className="w-4 h-4 text-[#38BDF8] shrink-0 mt-0.5" />
+                  <span>Blvd. Tetakawi #73-1, Sector Creston<br />San Carlos, Sonora</span>
+                </div>
+                <a href="tel:6221377210" className="flex items-center gap-3 text-sm text-white/50 hover:text-white/80 transition-colors">
+                  <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  622 137 7210
+                </a>
               </div>
             </div>
           </div>
+
 
           {Object.entries(links).map(([category, items]) => (
             <div key={category}>
