@@ -4,8 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import { Play, Volume2, VolumeX, ImageIcon, X, ZoomIn } from 'lucide-react';
 
 type GalleryItem =
-  | { type: 'video'; src: string; title: string; subtitle: string; span: number }
-  | { type: 'image'; src: string; title: string; subtitle: string; span: number };
+  | { type: 'video'; src: string; title: string; subtitle: string; colClass: string }
+  | { type: 'image'; src: string; title: string; subtitle: string; colClass: string };
 
 const items: GalleryItem[] = [
   {
@@ -13,21 +13,21 @@ const items: GalleryItem[] = [
     src: '/Cliente nuevo, cambios desde el primer día con nosotros.mp4',
     title: 'Cliente nuevo',
     subtitle: 'Cambios desde el primer día con nosotros',
-    span: 3,
+    colClass: 'col-span-1 lg:col-span-3',
   },
   {
     type: 'image',
     src: '/9d37490c-d948-4869-b6ca-3b77d86ae4df.jpg',
     title: 'Nuestras instalaciones',
     subtitle: 'Albercas diseñadas con calidad',
-    span: 2,
+    colClass: 'col-span-1 lg:col-span-2',
   },
   {
     type: 'video',
     src: '/HAZ TU PEDIDO.mp4',
     title: 'Haz tu pedido',
     subtitle: 'Fácil, rápido y seguro',
-    span: 5,
+    colClass: 'col-span-1 lg:col-span-5',
   },
 ];
 
@@ -56,8 +56,7 @@ function VideoCard({ item }: { item: Extract<GalleryItem, { type: 'video' }> }) 
 
   return (
     <div
-      className="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A1F3C] shadow-2xl cursor-pointer transition-transform duration-300 hover:-translate-y-1 aspect-video"
-      style={{ gridColumn: `span ${item.span}` }}
+      className={`group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0A1F3C] shadow-2xl cursor-pointer transition-transform duration-300 hover:-translate-y-1 aspect-video ${item.colClass}`}
       onClick={handlePlay}
     >
       <video
@@ -117,8 +116,7 @@ function ImageCard({
 }) {
   return (
     <div
-      className="group relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-300 hover:-translate-y-1 aspect-video cursor-zoom-in"
-      style={{ gridColumn: `span ${item.span}` }}
+      className={`group relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-300 hover:-translate-y-1 aspect-video cursor-zoom-in ${item.colClass}`}
       onClick={() => onOpen(item.src, item.title)}
     >
       <img
@@ -226,8 +224,8 @@ export default function GallerySection() {
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
+        {/* Grid: 1 col on mobile, 5 cols on lg */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:gap-5">
           {items.map((item) =>
             item.type === 'video' ? (
               <VideoCard key={item.src} item={item} />

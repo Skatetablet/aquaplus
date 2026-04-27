@@ -21,7 +21,7 @@ export default function ContactSection() {
   return (
     <section id="contacto" className="py-24 bg-[#F0F8FF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           <div>
             <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-[#0EA5E9] mb-4">
               Contacto
@@ -84,7 +84,7 @@ export default function ContactSection() {
 
           </div>
 
-          <div className="bg-white rounded-2xl border border-[#E2EDF7] shadow-xl shadow-[#0EA5E9]/5 p-8">
+          <div className="bg-white rounded-2xl border border-[#E2EDF7] shadow-xl shadow-[#0EA5E9]/5 p-8 flex flex-col">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-xl bg-[#0EA5E9]/10 flex items-center justify-center">
                 <MessageSquare className="w-5 h-5 text-[#0EA5E9]" />
@@ -95,7 +95,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col flex-1">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-[#4A5568] mb-2">
@@ -130,14 +130,14 @@ export default function ContactSection() {
                 />
               </div>
 
-              <div>
+              <div className="flex flex-col flex-1">
                 <label className="block text-xs font-bold uppercase tracking-wider text-[#4A5568] mb-2">
                   Mensaje
                 </label>
                 <textarea
                   rows={4}
                   placeholder="¿En qué podemos ayudarte? Describe tu necesidad o solicita una cotización..."
-                  className="w-full px-4 py-3 rounded-xl border border-[#E2EDF7] bg-[#F8FBFF] text-[#0A1F3C] text-sm placeholder:text-[#A0AEC0] focus:outline-none focus:border-[#0EA5E9] focus:ring-2 focus:ring-[#0EA5E9]/10 transition-colors resize-none"
+                  className="w-full flex-1 px-4 py-3 rounded-xl border border-[#E2EDF7] bg-[#F8FBFF] text-[#0A1F3C] text-sm placeholder:text-[#A0AEC0] focus:outline-none focus:border-[#0EA5E9] focus:ring-2 focus:ring-[#0EA5E9]/10 transition-colors resize-none"
                 />
               </div>
 
