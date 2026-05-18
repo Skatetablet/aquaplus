@@ -86,7 +86,7 @@ export default function ServiciosPage() {
               </span>
             </h1>
             <p className="text-white/60 text-lg max-w-2xl">
-              Mantenimiento profesional de piscinas — los expertos que su alberca necesita.
+              Mantenimiento profesional de piscinas — el equipo que su piscina necesita.
             </p>
           </div>
         </section>
@@ -100,19 +100,21 @@ export default function ServiciosPage() {
                   Por qué elegirnos
                 </span>
                 <h2 className="text-4xl font-black text-[#0A1F3C] leading-tight mb-6">
-                  Expertos en el{' '}
-                  <span className="text-[#0EA5E9]">cuidado de su piscina</span>
+                  Cuidado profesional para{' '}
+                  <span className="text-[#0EA5E9]">su piscina</span>
                 </h2>
                 <p className="text-[#5A7282] leading-relaxed mb-5">
-                  Para mantener la belleza y calidad de su piscina se requiere del mantenimiento
-                  profesional de manera periódica. Permita que los expertos de Química Aquaplus
-                  se hagan cargo. Contamos con todos los accesorios, refacciones y suministros
-                  que su alberca necesita.
+                  El mantenimiento adecuado es clave para preservar la calidad del agua, la seguridad y la durabilidad
+                  de su piscina. Nuestro equipo ofrece servicio especializado con programas de mantenimiento
+                  adaptados a cada tipo de instalación.
+                </p>
+                <p className="text-[#5A7282] leading-relaxed mb-5">
+                  Contamos con una amplia gama de accesorios, refacciones y productos para el tratamiento del agua,
+                  asegurando un funcionamiento eficiente y condiciones óptimas en todo momento.
                 </p>
                 <p className="text-[#5A7282] leading-relaxed mb-8">
-                  Contacte hoy a nuestro grupo de asesores quienes le orientarán en los procesos
-                  y productos aplicables para el mantenimiento de su piscina, garantizándole una
-                  vida más larga.
+                  Brindamos asesoría técnica para la correcta selección y aplicación de productos, contribuyendo a
+                  prolongar la vida útil de su piscina y optimizar su operación.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <a

@@ -2,11 +2,11 @@ import { CircleCheck as CheckCircle2, Award, Users, TrendingUp } from 'lucide-re
 
 const specialties = [
   'Productos químicos grado industrial',
-  'Grado analítico',
-  'Equipo y material para laboratorio',
+  'Productos químicos grado analítico',
   'Accesorios para piscina',
-  'Equipo para tratamiento de agua',
-  'Material refractario y productos químicos',
+  'Construcción de piscinas',
+  'Equipo y material para tratamiento de agua',
+  'Equipo y material para laboratorio',
 ];
 
 const pillars = [
@@ -37,7 +37,7 @@ export default function AboutSection() {
               </div>
               <div className="mt-3 h-0.5 bg-[#0EA5E9] w-8" />
               <p className="text-xs text-white/60 mt-2 leading-relaxed">
-                20 años de calidad, profesionalismo y compromiso
+                +20 años de calidad, profesionalismo y compromiso
               </p>
             </div>
           </div>
@@ -50,18 +50,17 @@ export default function AboutSection() {
               Química Aquaplus
             </h2>
             <p className="text-[#0EA5E9] font-bold text-lg mb-6">
-              20 años de Calidad, Profesionalismo, Responsabilidad y Compromiso
+              +20 años de Calidad, Profesionalismo, Responsabilidad y Compromiso
             </p>
 
             <p className="text-[#5A7282] leading-relaxed mb-4">
-              Empresa mexicana distribuidora de productos químicos industriales y reactivos analíticos,
-              establecida en Guaymas, Sonora desde el año 2003. Nos hemos especializado en el diseño
-              y construcción de albercas de todo tipo, en el servicio y mantenimiento; para ofrecerles
-              a las familias locales y foráneas una alternativa en salud y diversión.
+              Más de 20 años de experiencia respaldan nuestra trayectoria como empresa mexicana especializada en la distribución de productos químicos industriales y analíticos en Guaymas, Sonora. Complementamos nuestra oferta con soluciones integrales en tratamiento de agua, incluyendo el diseño, construcción y mantenimiento de piscinas residenciales y públicas.
+            </p>
+            <p className="text-[#5A7282] leading-relaxed mb-4">
+              Nuestra eComplementamos nuestra oferta con soluciones integrales en tratamiento de agua, incluyendo el diseño, construcción y mantenimiento de piscinas residenciales y públicas. Nuestra evolución ha estado marcada por la confianza de clientes del sector industrial y familias que buscan calidad, seguridad y resultados confiables, llevándonos a estar presentes en Guaymas, San Carlos, Empalme y Ciudad Obregón.volución ha estado marcada por la confianza de clientes del sector industrial y familias que buscan calidad, seguridad y resultados confiables, llevándonos a estar presentes en Guaymas, San Carlos, Empalme y Ciudad Obregón.
             </p>
             <p className="text-[#5A7282] leading-relaxed mb-8">
-              A lo largo de nuestra trayectoria hemos crecido como empresa, ganando la confianza de
-              más empresas y familias por saber aplicar nuestros valores en beneficio de la sociedad.
+              Nos distinguimos por un enfoque técnico, atención personalizada y un compromiso constante con la mejora continua, lo que nos permite ofrecer soluciones eficientes adaptadas a cada necesidad.
             </p>
 
             {/* Misión / Visión / Objetivos */}
@@ -69,15 +68,15 @@ export default function AboutSection() {
               {[
                 {
                   title: 'Misión',
-                  text: 'Somos un equipo comprometido con nuestros clientes en brindarles excelente calidad con marcas líderes y confiables, manteniendo una constante capacitación para ofrecer alta calidad en productos y servicios.',
+                  text: 'Brindar soluciones confiables en productos químicos y tratamiento de agua, mediante un servicio profesional, marcas de calidad y capacitación constante, asegurando la satisfacción de nuestros clientes.',
                 },
                 {
                   title: 'Visión',
-                  text: 'Proyectar nuestra imagen como empresa líder por la venta de nuestros productos y servicios, posicionándonos en el mercado de la industria manejando marcas líderes a la vanguardia.',
+                  text: 'Consolidarnos como una empresa referente en soluciones químicas y tratamiento de agua en la región, destacando por nuestra calidad, innovación y confianza.',
                 },
                 {
                   title: 'Objetivos',
-                  text: 'Mantener en nuestros clientes y amigos una sonrisa de satisfacción y la seguridad de que ellos y sus seres queridos nadan en un agua tratada con nuestros productos.',
+                  text: 'Garantizar a nuestros clientes soluciones seguras y eficientes, que contribuyan al bienestar, la operación óptima de sus procesos y la calidad del agua en sus espacios.',
                 },
               ].map(({ title, text }) => (
                 <div key={title} className="flex gap-3">

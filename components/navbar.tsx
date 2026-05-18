@@ -6,7 +6,7 @@ import { Menu, X, Phone } from 'lucide-react';
 const navLinks = [
   { label: 'Inicio', href: '/' },
   { label: 'Quiénes Somos', href: '/quienes-somos' },
-  { label: 'Productos', href: '#productos' },
+  { label: 'Productos', href: '/productos' },
   { label: 'Servicios', href: '/servicios' },
   { label: 'Construcción', href: '/construccion' },
   { label: 'Industria', href: '/industria' },
@@ -39,7 +39,7 @@ export default function Navbar() {
             <img
               src="/logo.PNG"
               alt="Química Aquaplus"
-              className="h-12 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </a>
 

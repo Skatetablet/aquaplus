@@ -15,9 +15,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Construcción de Albercas | Química Aquaplus',
+  title: 'Construcción de Piscinas | Química Aquaplus',
   description:
-    'Diseño, construcción y reconstrucción de albercas residenciales y comerciales en Guaymas, Sonora. 8 años de experiencia con tecnología de punta.',
+    'Diseño, construcción y reconstrucción de piscinas residenciales y comerciales en Guaymas, Sonora. 8 años de experiencia con tecnología de punta.',
 };
 
 const features = [
@@ -31,13 +31,13 @@ const features = [
     icon: Hammer,
     title: 'Construcción y reconstrucción',
     description:
-      'Construcción desde cero o renovación completa de albercas existentes con los más altos estándares.',
+      'Construcción desde cero o renovación completa de piscinas existentes con los más altos estándares.',
   },
   {
     icon: Thermometer,
     title: 'Sistemas de calentamiento',
     description:
-      'Instalación de sistemas modernos de calentamiento para disfrutar su alberca durante todo el año.',
+      'Instalación de sistemas modernos de calentamiento para disfrutar su piscina durante todo el año.',
   },
   {
     icon: Filter,
@@ -49,13 +49,13 @@ const features = [
     icon: Lightbulb,
     title: 'Iluminación',
     description:
-      'Iluminación LED subacuática y perimetral para transformar su alberca en un espacio espectacular.',
+      'Iluminación LED subacuática y perimetral para transformar su piscina en un espacio espectacular.',
   },
   {
     icon: ShieldCheck,
-    title: 'Mantenimiento y germinicidas',
+    title: 'Mantenimiento y químicos',
     description:
-      'Servicio, reparación y productos germinicidas para mantener la calidad y durabilidad de su alberca por muchos años.',
+      'Servicio de mantenimiento preventivo y correctivo para piscinas. Suministro de químicos necesarios y servicio de análisis del balance del agua.',
   },
 ];
 
@@ -63,7 +63,7 @@ const steps = [
   { number: '01', title: 'Asesoría', description: 'Nuestros expertos le orientan para tomar la mejor decisión según su espacio y presupuesto.' },
   { number: '02', title: 'Diseño', description: 'Creamos el proyecto a su medida con los materiales, tecnología y estilo que usted elija.' },
   { number: '03', title: 'Construcción', description: 'Ejecutamos la obra con un equipo de profesionales y los más altos estándares de calidad.' },
-  { number: '04', title: 'Entrega', description: 'Le entregamos su alberca terminada, equipada y lista para que comience a disfrutarla.' },
+  { number: '04', title: 'Entrega', description: 'Le entregamos su piscina terminada, equipada y lista para que comience a disfrutarla.' },
 ];
 
 export default function ConstruccionPage() {
@@ -86,23 +86,14 @@ export default function ConstruccionPage() {
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-32">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0EA5E9]/15 border border-[#0EA5E9]/30 mb-6">
-              <Star className="w-3.5 h-3.5 text-[#38BDF8] fill-current" />
-              <span className="text-xs font-semibold tracking-[0.2em] uppercase text-[#7DD3FC]">
-                8 años de experiencia · Guaymas, Sonora
-              </span>
-            </div>
-
+            
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-4 tracking-tight">
               Construcción de{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC]">
-                Albercas
+                Piscinas
               </span>
             </h1>
-            <p className="text-white/65 text-xl max-w-2xl leading-relaxed">
-              Bienvenidos a lo mejor en construcción y equipamiento de piscinas lujosas y
-              albercas residenciales en Guaymas, Sonora.
-            </p>
+            
 
             <div className="flex flex-wrap gap-4 mt-10">
               <a
@@ -133,14 +124,14 @@ export default function ConstruccionPage() {
                 <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                   <img
                     src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=900"
-                    alt="Construcción de albercas Química Aquaplus"
+                    alt="Construcción de piscinas Química Aquaplus"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#0A1F3C]/20 to-transparent" />
                 </div>
                 {/* Floating badge */}
                 <div className="absolute -bottom-6 -right-6 bg-[#0A1F3C] rounded-2xl p-6 shadow-2xl max-w-[200px]">
-                  <div className="text-4xl font-black text-white">8+</div>
+                  <div className="text-4xl font-black text-white">+15</div>
                   <div className="text-xs text-[#7DD3FC] uppercase tracking-widest mt-1">
                     Años construyendo
                   </div>
@@ -161,20 +152,10 @@ export default function ConstruccionPage() {
                   <span className="text-[#0EA5E9]">realidad</span>
                 </h2>
                 <p className="text-[#5A7282] leading-relaxed mb-5">
-                  Contamos con una experiencia de 8 años y un equipo de profesionales que le
-                  brindará la mejor asesoría para que convierta en realidad ese proyecto que
-                  tiene en mente. Y si no, nosotros le orientamos a tomar la mejor decisión.
-                </p>
-                <p className="text-[#5A7282] leading-relaxed mb-5">
-                  Diseño, construcción y reconstrucción de albercas para que usted y su familia
-                  disfrute horas de sana diversión. Reciba de nuestros asesores la mejor opción
-                  en la construcción de la alberca que satisfaga sus necesidades.
+                  Contamos con un equipo de profesionales con amplia experiencia en el desarrollo de proyectos de piscinas, brindando asesoría especializada en cada etapa para convertir sus ideas en soluciones funcionales y duraderas. Ofrecemos servicios de diseño, construcción y rehabilitación de piscinas, adaptados a las necesidades de cada cliente, ya sea en espacios residenciales o públicos, garantizando seguridad, eficiencia y calidad en cada proyecto.
                 </p>
                 <p className="text-[#5A7282] leading-relaxed">
-                  Contamos con lo más moderno en tecnología para la construcción de albercas y
-                  sistemas de calentamiento, filtrado e iluminación, así como mantenimiento,
-                  servicio, reparación y germinicidas para que la calidad y durabilidad de su
-                  alberca se mantenga muchos años más.
+                  Integramos tecnología actual en sistemas de filtrado, calentamiento e iluminación, así como soluciones completas de mantenimiento, servicio y reparación. Además, suministramos productos especializados para el tratamiento del agua, asegurando condiciones óptimas y prolongando la vida útil de cada instalación.
                 </p>
               </div>
             </div>
@@ -196,7 +177,7 @@ export default function ConstruccionPage() {
               <h2 className="text-4xl sm:text-5xl font-black text-white leading-tight">
                 Todo lo que su{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC]">
-                  alberca necesita
+                  piscina necesita
                 </span>
               </h2>
             </div>
@@ -270,7 +251,7 @@ export default function ConstruccionPage() {
             <h2 className="text-4xl sm:text-5xl font-black text-white leading-tight mb-4">
               ¿Listo para construir{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38BDF8] to-[#7DD3FC]">
-                su alberca?
+                su piscina?
               </span>
             </h2>
             <p className="text-white/60 mb-10 leading-relaxed">

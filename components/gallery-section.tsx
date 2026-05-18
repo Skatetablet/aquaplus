@@ -19,7 +19,7 @@ const items: GalleryItem[] = [
     type: 'image',
     src: '/9d37490c-d948-4869-b6ca-3b77d86ae4df.jpg',
     title: 'Nuestras instalaciones',
-    subtitle: 'Albercas diseñadas con calidad',
+    subtitle: 'Piscinas diseñadas con calidad',
     colClass: 'col-span-1 lg:col-span-2',
   },
   {

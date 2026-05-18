@@ -4,14 +4,14 @@ const branches = [
   {
     city: 'Guaymas',
     address: 'Calle 9 y 10 #3 entre Blvd. Benito Juárez y Avenida 4\nColonia San Vicente\nGuaymas, Sonora, México\nC.P. 85465',
-    phone: '01 (622) 224 14 57',
-    phoneLabel: 'Tel/Fax',
-    email: 'ventas@quimicaaquaplus.com',
+    phone: '(622) 224 1457',
+    phoneLabel: 'Tel',
+    email: 'guaymas@aquaplus.mx',
   },
   {
     city: 'San Carlos',
     address: 'Blvd. Tetakawi #73-1\nSector Creston\nSan Carlos, Sonora, México',
-    phone: '622 137 7210',
+    phone: '(622) 172 3536',
     phoneLabel: 'Tel',
     email: null,
   },
@@ -27,7 +27,7 @@ export default function ContactSection() {
               Contacto
             </span>
             <h2 className="text-4xl sm:text-5xl font-black text-[#0A1F3C] leading-tight mb-6">
-              Necesitas ayuda?
+              ¿No encuentras lo que buscas?
               <br />
               <span className="text-[#0EA5E9]">Contáctanos</span>
             </h2>

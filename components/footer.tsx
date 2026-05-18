@@ -2,21 +2,26 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 
 const links = {
   Productos: [
-    'Químicos para Alberca',
-    'Grado Industrial',
-    'Grado Analítico',
-    'Equipo de Laboratorio',
-    'Tratamiento de Agua',
-    'Material Refractario',
+    { name: 'Químicos para Piscina', href: '/productos/piscinas' },
+    { name: 'Grado Industrial', href: '/productos/industria' },
+    { name: 'Grado Analítico', href: '/productos' },
+    { name: 'Equipo de Laboratorio', href: '/productos' },
+    { name: 'Tratamiento de Agua', href: '/productos' },
+    { name: 'Material Refractario', href: '/productos' },
   ],
   Servicios: [
-    'Construcción de Albercas',
-    'Maquiladora',
-    'Asesoría Técnica',
-    'Entrega a Domicilio',
-    'Mantenimiento',
+    { name: 'Construcción de Piscinas', href: '/construccion' },
+    { name: 'Maquiladora', href: '/servicios' },
+    { name: 'Asesoría Técnica', href: '/servicios' },
+    { name: 'Entrega a Domicilio', href: '/servicios' },
+    { name: 'Mantenimiento', href: '/servicios' },
   ],
-  Empresa: ['Quiénes Somos', 'Galería', 'Ubicaciones', 'Industria', 'Contacto'],
+  Empresa: [
+    { name: 'Quiénes Somos', href: '/quienes-somos' },
+    { name: 'Ubicaciones', href: '/ubicaciones' },
+    { name: 'Industria', href: '/productos/industria' },
+    { name: 'Contacto', href: '/#contacto' },
+  ],
 };
 
 export default function Footer() {
@@ -30,7 +35,7 @@ export default function Footer() {
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6 max-w-xs">
               Desde 2003, proveyendo soluciones químicas de calidad para industria, laboratorios y
-              albercas en toda la región.
+              piscinas en toda la región.
             </p>
 
             {/* Guaymas */}
@@ -43,11 +48,11 @@ export default function Footer() {
                 </div>
                 <a href="tel:016222241457" className="flex items-center gap-3 text-sm text-white/50 hover:text-white/80 transition-colors">
                   <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                  01 (622) 224 14 57
+                  (622) 224 1457
                 </a>
                 <a href="mailto:ventas@quimicaaquaplus.com" className="flex items-center gap-3 text-sm text-white/50 hover:text-white/80 transition-colors">
                   <Mail className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                  ventas@quimicaaquaplus.com
+                  guaymas@aquaplus.mx
                 </a>
               </div>
             </div>
@@ -62,7 +67,7 @@ export default function Footer() {
                 </div>
                 <a href="tel:6221377210" className="flex items-center gap-3 text-sm text-white/50 hover:text-white/80 transition-colors">
                   <Phone className="w-4 h-4 text-[#38BDF8] shrink-0" />
-                  622 137 7210
+                  (622) 172 3536
                 </a>
               </div>
             </div>
@@ -76,12 +81,12 @@ export default function Footer() {
               </h4>
               <ul className="space-y-2.5">
                 {items.map((item) => (
-                  <li key={item}>
+                  <li key={item.name}>
                     <a
-                      href="#"
+                      href={item.href}
                       className="text-sm text-white/45 hover:text-white/80 transition-colors"
                     >
-                      {item}
+                      {item.name}
                     </a>
                   </li>
                 ))}

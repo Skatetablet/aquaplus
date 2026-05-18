@@ -3,15 +3,15 @@ import { Truck, Headphones as HeadphonesIcon, ShieldCheck, Zap, Building2, TestT
 const services = [
   {
     icon: ShieldCheck,
-    title: 'Calidad Certificada',
+    title: 'Industrias',
     description:
-      'Todos nuestros productos cumplen con normas de calidad nacionales e internacionales para garantizar resultados confiables.',
+      'Nuestro amplio catálogo de químicos satisface las necesidades de diversas industrias. Todos los químicos cuentan con certificado de calidad y hoja de seguridad.',
   },
   {
     icon: Truck,
-    title: 'Entrega a Domicilio',
+    title: 'Entrega a domicilio',
     description:
-      'Servicio de entrega en toda la región. Recibe tus pedidos de forma segura, puntual y con la documentación necesaria.',
+      'Servicio de entrega a domicilio en Guaymas y San Carlos. Embarcamos pedidos a toda la República Mexicana. Recibe tus pedidos de forma segura, puntual y con la documentación necesaria.',
   },
   {
     icon: HeadphonesIcon,
@@ -21,9 +21,9 @@ const services = [
   },
   {
     icon: Building2,
-    title: 'Construcción de Albercas',
+    title: 'Construcción de piscinas',
     description:
-      'Servicio completo de construcción, remodelación y mantenimiento de albercas residenciales y comerciales.',
+      'Servicio de construcción, remodelación, equipamiento y mantenimiento de piscinas.',
   },
   {
     icon: TestTube,

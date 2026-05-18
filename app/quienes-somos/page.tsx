@@ -6,7 +6,7 @@ import { Award, Users, TrendingUp, Target, Eye, Heart } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Quiénes Somos | Química Aquaplus',
   description:
-    '20 años de calidad, profesionalismo, responsabilidad y compromiso. Conoce la historia, misión, visión y objetivos de Química Aquaplus en Guaymas, Sonora.',
+    '+20 años de calidad, profesionalismo, responsabilidad y compromiso. Conoce la historia, misión, visión y objetivos de Química Aquaplus en Guaymas, Sonora.',
 };
 
 const pillars = [
@@ -14,19 +14,19 @@ const pillars = [
     icon: Heart,
     title: 'Misión',
     color: 'from-[#0EA5E9] to-[#0284C7]',
-    text: 'Somos un equipo de trabajo que enmarca nuestros valores y objetivos, comprometidos siempre con nuestros clientes en brindarles excelente calidad con nuestras marcas líderes y confiables en las diferentes áreas de competencia, manteniendo una constante capacitación para ofrecer alta calidad en nuestros productos y servicios.',
+    text: 'Brindar soluciones confiables en productos químicos y tratamiento de agua, mediante un servicio profesional, marcas de calidad y capacitación constante, asegurando la satisfacción de nuestros clientes.',
   },
   {
     icon: Eye,
     title: 'Visión',
     color: 'from-[#0369A1] to-[#0EA5E9]',
-    text: 'Proyectar nuestra imagen como empresa líder por la venta de nuestros productos y servicios. Posicionarnos en el mercado de la industria por manejar marcas líderes, manteniéndonos siempre a la vanguardia con un nivel competitivo alto.',
+    text: 'Consolidarnos como una empresa referente en soluciones químicas y tratamiento de agua en la región, destacando por nuestra calidad, innovación y confianza.',
   },
   {
     icon: Target,
     title: 'Objetivos',
     color: 'from-[#075985] to-[#0369A1]',
-    text: 'Uno de nuestros principales objetivos en el área de piscinas es mantener en nuestros clientes y amigos una sonrisa de satisfacción y la seguridad de que ellos y sus seres queridos nadan en un agua tratada con nuestros productos.',
+    text: 'Garantizar a nuestros clientes soluciones seguras y eficientes, que contribuyan al bienestar, la operación óptima de sus procesos y la calidad del agua en sus espacios.',
   },
 ];
 
@@ -66,7 +66,7 @@ export default function QuienesSomosPage() {
               </span>
             </h1>
             <p className="text-xl text-[#38BDF8] font-semibold max-w-2xl">
-              20 años de Calidad, Profesionalismo, Responsabilidad y Compromiso
+              +20 años de Calidad, Profesionalismo, Responsabilidad y Compromiso
             </p>
           </div>
         </section>
@@ -91,7 +91,7 @@ export default function QuienesSomosPage() {
                   <div className="text-xs text-[#7DD3FC] uppercase tracking-widest mt-1">Fundada en</div>
                   <div className="mt-3 h-0.5 bg-[#0EA5E9] w-8" />
                   <p className="text-xs text-white/60 mt-2 leading-relaxed">
-                    20 años de calidad, profesionalismo y compromiso
+                    +20 años de calidad, profesionalismo y compromiso
                   </p>
                 </div>
               </div>
@@ -106,19 +106,12 @@ export default function QuienesSomosPage() {
                   <span className="text-[#0EA5E9]">raíces en Guaymas</span>
                 </h2>
                 <p className="text-[#5A7282] leading-relaxed mb-5">
-                  Química Aquaplus es una empresa mexicana distribuidora de productos químicos
-                  industriales y reactivos analíticos otorgadora de servicios, establecida en la
-                  ciudad y puerto de Guaymas, Sonora desde el año 2003. Nos hemos especializado
-                  en el diseño y construcción de albercas de todo tipo, en el servicio y
-                  mantenimiento; para ofrecerles a las familias locales y foráneas una alternativa
-                  en salud y diversión.
+                  Más de 20 años de experiencia respaldan nuestra trayectoria como empresa mexicana especializada en la distribución de productos químicos industriales y analíticos en Guaymas, Sonora. Complementamos nuestra oferta con soluciones integrales en tratamiento de agua, incluyendo el diseño, construcción y mantenimiento de piscinas residenciales y públicas.
                 </p>
+                <p className="text-[#5A7282] leading-relaxed mb-5">
+Complementamos nuestra oferta con soluciones integrales en tratamiento de agua, incluyendo el diseño, construcción y mantenimiento de piscinas residenciales y públicas. Nuestra evolución ha estado marcada por la confianza de clientes del sector industrial y familias que buscan calidad, seguridad y resultados confiables, llevándonos a estar presentes en Guaymas, San Carlos, Empalme y Ciudad Obregón.                </p>
                 <p className="text-[#5A7282] leading-relaxed">
-                  A lo largo de nuestra trayectoria nos hemos desarrollado como empresa con un gran
-                  crecimiento en nuestra plantilla de clientes, por la sólida estructura en la
-                  calidad de nuestros servicios que nos ha permitido crecer y ganar la confianza de
-                  más empresas y familias por saber aplicar nuestros valores en beneficio de la
-                  sociedad.
+                  Nos distinguimos por un enfoque técnico, atención personalizada y un compromiso constante con la mejora continua, lo que nos permite ofrecer soluciones eficientes adaptadas a cada necesidad.
                 </p>
               </div>
             </div>
