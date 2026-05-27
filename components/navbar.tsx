@@ -9,7 +9,6 @@ const navLinks = [
   { label: 'Productos', href: '/productos' },
   { label: 'Servicios', href: '/servicios' },
   { label: 'Construcción', href: '/construccion' },
-  { label: 'Industria', href: '/industria' },
   { label: 'Maquiladora', href: '/maquiladora' },
   { label: 'Galería', href: '/galeria' },
   { label: 'Ubicaciones', href: '/ubicaciones' },

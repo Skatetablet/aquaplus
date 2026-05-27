@@ -1,55 +1,100 @@
 import type { Metadata } from 'next';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
-import { Factory, Users, Award, ArrowRight, Phone, FlaskConical } from 'lucide-react';
+import { Factory, Users, Award, ArrowRight, Phone, FlaskConical, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Maquiladora | Química Aquaplus',
+  title: 'Maquiladora e Industria | Química Aquaplus',
   description:
-    'Distribuidores locales de empresa maquiladora en Guaymas, Sonora. Solventes, acetatos, cetonas, monómeros y más productos químicos especializados.',
+    'Distribuidores de productos químicos industriales en Guaymas, Sonora. Acetona, hipoclorito, thinner, sosa, sal, ácidos y soluciones especializadas para diversos sectores.',
 };
 
 const products = [
   {
-    name: 'Acetatos',
-    description: 'Solventes éster de uso industrial ampliamente utilizados en pinturas, adhesivos y recubrimientos.',
+    name: 'Acetona',
+    description: 'Solvente orgánico de alta pureza, ampliamente utilizado como agente de limpieza, desengrasante y diluyente en procesos industriales.',
     color: 'from-[#0EA5E9] to-[#0284C7]',
   },
   {
-    name: 'Cetonas',
-    description: 'Compuestos orgánicos de alto poder disolvente para resinas, lacas y formulaciones especializadas.',
+    name: 'Hipoclorito',
+    description: 'Agente desinfectante y oxidante altamente efectivo, ideal para el tratamiento de agua, sanitización de superficies e higiene industrial.',
     color: 'from-[#0369A1] to-[#0EA5E9]',
   },
   {
-    name: 'Glicoeéteres',
-    description: 'Solventes de alta compatibilidad utilizados en tintas, recubrimientos y sistemas de limpieza.',
+    name: 'Thinner',
+    description: 'Diluyente formulado de alta calidad para pinturas, lacas, esmaltes y limpieza de equipos de aplicación.',
     color: 'from-[#075985] to-[#0369A1]',
   },
   {
-    name: 'Monómeros',
-    description: 'Unidades moleculares base para la producción de polímeros y resinas en procesos industriales.',
+    name: 'Metil Etil Cetona (MEK)',
+    description: 'Solvente industrial de rápida evaporación y excelente poder de disolución para resinas, lacas y adhesivos.',
     color: 'from-[#0284C7] to-[#38BDF8]',
   },
   {
-    name: 'Solventes',
-    description: 'Amplia gama de solventes industriales para limpieza, dilución y formulación de productos.',
+    name: 'Sosa',
+    description: 'Hidróxido de sodio de grado industrial en presentación líquida o escamas, utilizado para limpieza profunda, neutralización y procesos químicos.',
     color: 'from-[#0A1F3C] to-[#0F4C81]',
   },
   {
-    name: 'Dieléctricos',
-    description: 'Fluidos aislantes de alta pureza para aplicaciones eléctricas y electrónicas.',
+    name: 'Sal',
+    description: 'Cloruro de sodio de alta pureza para la regeneración de resinas de intercambio iónico y sistemas de ablandamiento de agua.',
     color: 'from-[#0F4C81] to-[#0369A1]',
   },
   {
-    name: 'Oxigenados',
-    description: 'Solventes oxigenados de alta eficiencia para pinturas, recubrimientos y productos de limpieza.',
+    name: 'Bicarbonato',
+    description: 'Bicarbonato de sodio industrial para el ajuste seguro del pH, tratamiento de aguas y aplicaciones de limpieza especializada.',
     color: 'from-[#0369A1] to-[#0284C7]',
   },
   {
-    name: 'Thiner',
-    description: 'Diluyente y limpiador para pinturas de aceite, lacas y esmaltes en aplicaciones industriales.',
+    name: 'Carbonato',
+    description: 'Carbonato de sodio utilizado como agente alcalinizante en el tratamiento de aguas y formulación de detergentes.',
     color: 'from-[#0284C7] to-[#0EA5E9]',
   },
+  {
+    name: 'Sulfato de Aluminio',
+    description: 'Coagulante químico altamente efectivo para la clarificación y eliminación de sólidos suspendidos en el tratamiento de agua.',
+    color: 'from-[#0EA5E9] to-[#0284C7]',
+  },
+  {
+    name: 'Arena',
+    description: 'Arena sílica de granulometría controlada y alta pureza, optimizada para filtros de agua y sistemas de purificación.',
+    color: 'from-[#0369A1] to-[#0EA5E9]',
+  },
+  {
+    name: 'Alcohol Isopropílico',
+    description: 'Solvente de rápida evaporación de grado industrial para limpieza de componentes de precisión, desinfección y formulaciones.',
+    color: 'from-[#075985] to-[#0369A1]',
+  },
+  {
+    name: 'Formol',
+    description: 'Formaldehído en solución acuosa estabilizada para la conservación, desinfección y síntesis de resinas.',
+    color: 'from-[#0284C7] to-[#38BDF8]',
+  },
+  {
+    name: 'Ácido Muriático',
+    description: 'Ácido clorhídrico de concentración industrial para la limpieza de superficies, desincrustación de sarro y regulación de pH.',
+    color: 'from-[#0A1F3C] to-[#0F4C81]',
+  },
+  {
+    name: 'Ácido Sulfúrico',
+    description: 'Ácido mineral fuerte indispensable para la formulación química, neutralización de efluentes y aplicaciones industriales complejas.',
+    color: 'from-[#0F4C81] to-[#0369A1]',
+  },
+  {
+    name: 'Regeneración de Botellas de Resina Mixta',
+    description: 'Servicio técnico especializado y soluciones químicas para la reactivación y mantenimiento de resinas desmineralizadoras.',
+    color: 'from-[#0369A1] to-[#0284C7]',
+  },
+];
+
+const sectors = [
+  'Sector agropecuario',
+  'Sector alimenticio',
+  'Sector analítico y de laboratorio',
+  'Sector hospitalario',
+  'Sector industrial',
+  'Sector pesquero',
+  'Sector turístico',
 ];
 
 export default function MaquiladoraPage() {
@@ -78,11 +123,10 @@ export default function MaquiladoraPage() {
               </span>
             </div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-4 tracking-tight">
-              Maquiladora
+              Maquiladora e Industria
             </h1>
             <p className="text-white/65 text-xl max-w-2xl leading-relaxed">
-              Distribuidores de empresa maquiladora con experiencia y profesionales
-              a su servicio en Guaymas, Sonora.
+              Distribución local confiable de insumos químicos para la industria maquiladora y diversos sectores en Guaymas y San Carlos.
             </p>
             <div className="flex flex-wrap gap-4 mt-10">
               <a
@@ -111,48 +155,44 @@ export default function MaquiladoraPage() {
               {/* Copy */}
               <div>
                 <span className="inline-block text-xs font-bold tracking-[0.25em] uppercase text-[#0EA5E9] mb-4">
-                  Quiénes somos
+                  Soluciones Químicas
                 </span>
                 <h2 className="text-4xl font-black text-[#0A1F3C] leading-tight mb-6">
-                  Empresa local con{' '}
-                  <span className="text-[#0EA5E9]">experiencia comprobada</span>
+                  Suministro eficiente para{' '}
+                  <span className="text-[#0EA5E9]">diversos sectores</span>
                 </h2>
-                <p className="text-[#5A7282] leading-relaxed mb-5">
-                  Somos una empresa local de Guaymas que distribuye a la empresa maquiladora.
-                  Contamos con experiencia y un equipo de profesionales que le brindará el mejor
-                  servicio para cubrir todas sus necesidades de productos químicos especializados.
-                </p>
-                <p className="text-[#5A7282] leading-relaxed mb-8">
-                  Nuestra trayectoria nos respalda y nos permite ofrecer productos de calidad con
-                  la confianza y el respaldo que su operación requiere.
-                </p>
+                
+                <div className="space-y-5 text-[#5A7282] leading-relaxed mb-8">
+                  <p>
+                    Ofrecemos una amplia gama de productos químicos industriales diseñados para atender las necesidades de diversos sectores.
+                  </p>
+                  <p>
+                    Somos proveedores de soluciones químicas que cumplen con altos estándares de calidad, seguridad e higiene, contribuyendo a la eficiencia operativa y al cumplimiento de normativas en cada proceso.
+                  </p>
+                  <p>
+                    Brindamos asesoría técnica especializada para la correcta selección y aplicación de productos, adaptándonos a los requerimientos específicos de cada industria.
+                  </p>
+                </div>
 
-                {/* Mini stats */}
-                <div className="grid grid-cols-3 gap-4 pt-6 border-t border-[#E2EDF7]">
-                  {[
-                    { icon: Award,        value: '20+', label: 'Años de experiencia' },
-                    { icon: Users,        value: '100%', label: 'Atención personalizada' },
-                    { icon: FlaskConical, value: '8',   label: 'Líneas de productos' },
-                  ].map((s) => {
-                    const Icon = s.icon;
-                    return (
-                      <div key={s.label} className="text-center">
-                        <div className="w-10 h-10 rounded-xl bg-[#EBF5FF] flex items-center justify-center mx-auto mb-2">
-                          <Icon className="w-5 h-5 text-[#0EA5E9]" />
-                        </div>
-                        <div className="text-2xl font-black text-[#0A1F3C]">{s.value}</div>
-                        <div className="text-xs text-[#8A9BB0] uppercase tracking-wide mt-0.5 leading-snug">
-                          {s.label}
-                        </div>
+                {/* Sectores que atendemos */}
+                <div className="mb-8 pt-6 border-t border-[#E2EDF7]">
+                  <h3 className="text-sm font-bold tracking-[0.2em] uppercase text-[#0A1F3C] mb-4">
+                    Sectores que atendemos
+                  </h3>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {sectors.map((sector) => (
+                      <div key={sector} className="flex items-center gap-2.5">
+                        <CheckCircle className="w-4.5 h-4.5 text-[#0EA5E9] shrink-0" />
+                        <span className="text-sm font-medium text-[#5A7282]">{sector}</span>
                       </div>
-                    );
-                  })}
+                    ))}
+                  </div>
                 </div>
               </div>
 
-              {/* Image */}
+              {/* Image & Stats */}
               <div className="relative">
-                <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+                <div className="rounded-2xl overflow-hidden aspect-[4/3] mb-8">
                   <img
                     src="https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=900"
                     alt="Maquiladora Química Aquaplus"
@@ -160,16 +200,27 @@ export default function MaquiladoraPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-[#0A1F3C]/25 to-transparent" />
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-[#0A1F3C] rounded-2xl p-6 shadow-2xl max-w-[200px]">
-                  <div className="flex items-center gap-2 mb-1">
-                    <Factory className="w-5 h-5 text-[#38BDF8]" />
-                    <span className="text-white font-black">Local</span>
-                  </div>
-                  <div className="text-xs text-[#7DD3FC] uppercase tracking-widest">Guaymas, Son.</div>
-                  <div className="mt-3 h-0.5 bg-[#0EA5E9] w-8" />
-                  <p className="text-xs text-white/60 mt-2 leading-relaxed">
-                    Distribuidores comprometidos con la industria local
-                  </p>
+                
+                {/* Mini stats card beneath image */}
+                <div className="grid grid-cols-3 gap-4 p-6 bg-[#F8FBFF] rounded-2xl border border-[#E2EDF7] shadow-sm">
+                  {[
+                    { icon: Award,        value: '20+', label: 'Años de experiencia' },
+                    { icon: Users,        value: '100%', label: 'Atención personalizada' },
+                    { icon: FlaskConical, value: '15',   label: 'Productos catálogo' },
+                  ].map((s) => {
+                    const Icon = s.icon;
+                    return (
+                      <div key={s.label} className="text-center">
+                        <div className="w-10 h-10 rounded-xl bg-[#EBF5FF] flex items-center justify-center mx-auto mb-2">
+                          <Icon className="w-5 h-5 text-[#0EA5E9]" />
+                        </div>
+                        <div className="text-xl font-black text-[#0A1F3C]">{s.value}</div>
+                        <div className="text-[10px] text-[#8A9BB0] uppercase tracking-wide mt-0.5 leading-snug font-bold">
+                          {s.label}
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -196,19 +247,23 @@ export default function MaquiladoraPage() {
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
               {products.map((p) => (
                 <div
                   key={p.name}
-                  className="group p-6 rounded-2xl border border-white/10 hover:border-[#0EA5E9]/40 bg-white/5 hover:bg-white/8 transition-all duration-300 hover:-translate-y-1"
+                  className="group p-6 rounded-2xl border border-white/10 hover:border-[#0EA5E9]/40 bg-white/5 hover:bg-white/8 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
                 >
-                  {/* Color accent bar */}
-                  <div className={`h-1 w-10 rounded-full bg-gradient-to-r ${p.color} mb-5`} />
-                  <h3 className="text-xl font-black text-white mb-3">{p.name}</h3>
-                  <p className="text-sm text-white/70 leading-relaxed mb-5">{p.description}</p>
+                  <div>
+                    {/* Color accent bar */}
+                    <div className={`h-1 w-10 rounded-full bg-gradient-to-r ${p.color} mb-5`} />
+                    <h3 className="text-xl font-black text-white mb-3 group-hover:text-[#38BDF8] transition-colors duration-200">
+                      {p.name}
+                    </h3>
+                    <p className="text-sm text-white/70 leading-relaxed mb-5">{p.description}</p>
+                  </div>
                   <a
                     href="/#contacto"
-                    className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-[#38BDF8] hover:text-white transition-colors group/link"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-[#38BDF8] hover:text-white transition-colors group/link mt-2"
                   >
                     Cotizar
                     <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-0.5 transition-transform" />

@@ -113,7 +113,7 @@ export default function ProductsSection() {
             <div className="flex-1 h-px bg-[#D6EAF8]" />
           </div>
 
-          <a href="/productos/industria" className="rounded-2xl border border-[#E2EDF7] bg-white p-6 flex items-center gap-4 hover:border-[#0EA5E9]/40 hover:shadow-lg hover:shadow-[#0EA5E9]/10 transition-all duration-300 group cursor-pointer block sm:flex">
+          <a href="/maquiladora" className="rounded-2xl border border-[#E2EDF7] bg-white p-6 flex items-center gap-4 hover:border-[#0EA5E9]/40 hover:shadow-lg hover:shadow-[#0EA5E9]/10 transition-all duration-300 group cursor-pointer block sm:flex">
             <div className="w-12 h-12 rounded-xl bg-[#EBF5FF] flex items-center justify-center shrink-0 group-hover:bg-gradient-to-br group-hover:from-[#0EA5E9] group-hover:to-[#0284C7] transition-all duration-300">
               <Factory className="w-6 h-6 text-[#0A1F3C] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
             </div>

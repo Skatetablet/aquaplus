@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail } from 'lucide-react';
 const links = {
   Productos: [
     { name: 'Químicos para Piscina', href: '/productos/piscinas' },
-    { name: 'Grado Industrial', href: '/productos/industria' },
+    { name: 'Grado Industrial', href: '/maquiladora' },
     { name: 'Grado Analítico', href: '/productos' },
     { name: 'Equipo de Laboratorio', href: '/productos' },
     { name: 'Tratamiento de Agua', href: '/productos' },
@@ -11,7 +11,7 @@ const links = {
   ],
   Servicios: [
     { name: 'Construcción de Piscinas', href: '/construccion' },
-    { name: 'Maquiladora', href: '/servicios' },
+    { name: 'Maquiladora', href: '/maquiladora' },
     { name: 'Asesoría Técnica', href: '/servicios' },
     { name: 'Entrega a Domicilio', href: '/servicios' },
     { name: 'Mantenimiento', href: '/servicios' },
@@ -19,7 +19,7 @@ const links = {
   Empresa: [
     { name: 'Quiénes Somos', href: '/quienes-somos' },
     { name: 'Ubicaciones', href: '/ubicaciones' },
-    { name: 'Industria', href: '/productos/industria' },
+    { name: 'Maquiladora e Industria', href: '/maquiladora' },
     { name: 'Contacto', href: '/#contacto' },
   ],
 };
