@@ -23,7 +23,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <img
-                src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=900"
+                src="/media/9d37490c-d948-4869-b6ca-3b77d86ae4df.jpg"
                 alt="Quimica Aquaplus - Instalaciones"
                 className="w-full h-full object-cover"
               />

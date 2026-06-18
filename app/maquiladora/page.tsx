@@ -109,7 +109,7 @@ export default function MaquiladoraPage() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
-                "url('https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+                "url('/media/maquiladora-entrega.jpeg')",
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#0A1F3C]/96 via-[#0A1F3C]/85 to-[#0F4C81]/60" />
@@ -194,7 +194,7 @@ export default function MaquiladoraPage() {
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] mb-8">
                   <img
-                    src="https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    src="/media/maquiladora-tambos.jpeg"
                     alt="Maquiladora Química Aquaplus"
                     className="w-full h-full object-cover"
                   />

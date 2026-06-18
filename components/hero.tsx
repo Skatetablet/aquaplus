@@ -12,7 +12,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/261403/pexels-photo-261403.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+            "url('/media/29f967cc-7bf8-4f28-ba2b-0b87506a64f7.jpg')",
         }}
       />
 
